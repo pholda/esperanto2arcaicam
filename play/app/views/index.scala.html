@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Konvertilo de Esperanto al Arcaicam Esperantom</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/style.css")" />
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Esperanto2ArcaicamEsperantom</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Konvertilo</a></li>
+                        <li><a href="#about">Pri projekto</a></li>
+                        <li><a href="#contact">Kontakto</a></li>
+                    </ul>
+                    @*<ul class="nav navbar-nav navbar-right">*@
+                        @*<li><a href="../navbar/">Default</a></li>*@
+                        @*<li><a href="../navbar-static-top/">Static top</a></li>*@
+                        @*<li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>*@
+                    @*</ul>*@
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+        <div class="container">
+
+                <!-- Main component for a primary marketing message or call to action -->
+            <div class="jumbotron">
+                <h1>Konvertilo</h1>
+                <h2>de Esperanto al Arcaicam Esperantom</h2>
+                <p>Per tiu ĉi programo vi povas konverti esperantan tekston en Arcaicam Esperantom. Ĝi ne subtenas ĉiujn regulojn de Arcaicam Esperantom, sed sufiĉe da :)</p>
+                <textarea id="esperantaTeksto">Mi ŝatas bieron</textarea>
+                <p>
+                    <a id="konvertu" class="btn btn-lg btn-primary" href="#" role="button">Konvertu</a>
+                </p>
+                <h2>Rezulto:</h2>
+                <p id="rezulto"></p>
+            </div>
+
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="@routes.Assets.at("javascripts/js.js")"></script>
+    </body>
+</html>
