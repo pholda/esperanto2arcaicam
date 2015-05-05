@@ -157,6 +157,7 @@ object Translator {
                 case "si" => "sihin"
                 case s => s
               }
+            case Unknown(v) => v
             case s => s.toString
           }
 
