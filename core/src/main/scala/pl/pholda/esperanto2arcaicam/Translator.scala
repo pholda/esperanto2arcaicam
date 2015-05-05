@@ -95,7 +95,6 @@ object Translator {
               }
               n match {
                 case x if x >= 0 && x <= 10 => n2str(x)
-//                case x => s">$x<"
                 case x if x % 1000 == 0 => n2str(x/1000)+n2str(1000)
                 case x if x % 100 == 0 => n2str(x/100)+n2str(100)
                 case x if x % 10 == 0 => n2str(x/10)+n2str(10)
